@@ -29,7 +29,7 @@
     "dayCount": 10,
     "primaryDestinationCountries": ["Japan"],
     "primaryDestinationName": "日本",
-    "heroTitle": null
+    "heroTitle": "东京 × 大阪 10日游"
   },
   "flightJourneys": [
     { "id": "journey-kul-nrt" },
@@ -123,10 +123,7 @@
     { "id": "place-keisei-narita-sta", "name": "京成成田站", "countryCode": "JP" }
   ],
   "ticketPlanning": {
-    "items": [
-      { "id": "ticket-todaiji", "day": 2, "name": "东大寺主殿门票", "requirement": "现场购票 800 JPY" },
-      { "id": "ticket-kiyomizudera", "day": 3, "name": "清水寺门票", "requirement": "现场购票 500 JPY" }
-    ]
+    "items": []
   },
   "preTrip": {
     "packingItems": []
@@ -154,7 +151,7 @@
         { "id": "d2-s3", "time": "11:00", "type": "transport", "text": "关西机场→南海难波→天下茶屋换乘→惠美须町 Airbnb，约50min，1160 JPY" },
         { "id": "d2-s4", "time": "12:30", "type": "activity", "text": "Airbnb 放行李，午餐" },
         { "id": "d2-s5", "time": "13:30", "type": "transport", "text": "往返奈良，约44min单程，往返870×2=1740 JPY" },
-        { "id": "d2-s6", "time": "14:30", "type": "activity", "text": "奈良公园、东大寺主殿（800 JPY）、二月堂", "ticketIds": ["ticket-todaiji"] },
+        { "id": "d2-s6", "time": "14:30", "type": "activity", "text": "奈良公园、东大寺主殿（800 JPY）、二月堂" },
         { "id": "d2-s7", "time": "17:30", "type": "activity", "text": "Airbnb check in，休息" },
         { "id": "d2-s8", "time": "19:00", "type": "activity", "text": "道顿堀、心斋桥，晚餐（往返190×2=380 JPY）" }
       ]
@@ -168,7 +165,7 @@
         { "id": "d3-s1", "time": "08:30", "type": "transport", "text": "Airbnb→伏见稻荷，约1h6m，720 JPY" },
         { "id": "d3-s2", "time": "09:30", "type": "activity", "text": "伏见稻荷神社（千本鸟居）" },
         { "id": "d3-s3", "time": "11:00", "type": "transport", "text": "伏见稻荷→清水寺，电车+巴士+步行约30min，410 JPY" },
-        { "id": "d3-s4", "time": "11:30", "type": "activity", "text": "清水寺（门票500 JPY）", "ticketIds": ["ticket-kiyomizudera"] },
+        { "id": "d3-s4", "time": "11:30", "type": "activity", "text": "清水寺（门票500 JPY）" },
         { "id": "d3-s5", "time": "13:00", "type": "activity", "text": "三年坂、二年坂（商业街，步行3min）" },
         { "id": "d3-s6", "time": "14:00", "type": "activity", "text": "法观寺打卡（步行2min）" },
         { "id": "d3-s7", "time": "14:30", "type": "activity", "text": "八坂神社（步行8min）" },
@@ -192,7 +189,7 @@
         { "id": "d4-s6", "time": "14:30", "type": "activity", "text": "大阪城参观（可选园内小火车，成人单程400/一日券1000 JPY）" },
         { "id": "d4-s7", "time": "16:30", "type": "transport", "text": "大阪城公园→新今宫取行李（14min，200 JPY）" },
         { "id": "d4-s8", "time": "17:30", "type": "transport", "text": "动物园前→新大阪（御堂筋线，21min，290 JPY）" },
-        { "id": "d4-s9", "time": "18:00", "type": "transport", "text": "新大阪站乘新干线赴东京（Hikari 668 12490 JPY/2h44m 或 Nozomi 50 12980 JPY/2h27m）", "placeIds": ["place-shinosaka-sta", "place-shinagawa-sta"] },
+        { "id": "d4-s9", "time": "18:00", "type": "transport", "text": "新大阪站乘新干线赴东京（Hikari 668 12490 JPY/2h44m 或 Nozomi 50 12980 JPY/2h27m）" },
         { "id": "d4-s10", "time": "21:00", "type": "transport", "text": "品川→池袋（山手线，341 JPY），check in Sakura Hotel Ikebukuro" },
         { "id": "d4-s11", "time": "21:30", "type": "activity", "text": "晚餐" }
       ]
