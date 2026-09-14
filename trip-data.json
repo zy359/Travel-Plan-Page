@@ -18,7 +18,7 @@
   },
   "metadata": {
     "tripId": "japan-2026-10",
-    "title": "日本十日自由行",
+    "title": "Sushi trip 2026",
     "language": "zh-CN",
     "assets": {}
   },
@@ -49,18 +49,26 @@
       "Kamakura"
     ],
     "routeSummary": "成田 → 大阪 → 京都 → 奈良 → 东京 → 日光 → 河口湖 → 山中湖 → 箱根 → 镰仓 → 成田",
-    "groupSize": null
+    "groupSize": 5
   },
   "flightJourneys": [
     {
       "id": "outbound",
       "title": "去程",
-      "status": "confirmed"
+      "status": "confirmed",
+      "bookingReference": "TJHGSH"
+    },
+    {
+      "id": "osaka",
+      "title": "关西段",
+      "status": "confirmed",
+      "bookingReference": "2TAZ8V"
     },
     {
       "id": "return",
       "title": "返程",
-      "status": "confirmed"
+      "status": "confirmed",
+      "bookingReference": "N7C65S"
     }
   ],
   "flights": [
@@ -68,6 +76,7 @@
       "id": "ak880",
       "journeyId": "outbound",
       "sequence": 1,
+      "bookingReference": "TJHGSH",
       "airline": {
         "name": "AirAsia",
         "nameZh": "亚洲航空"
@@ -92,6 +101,7 @@
       "id": "xj606",
       "journeyId": "outbound",
       "sequence": 2,
+      "bookingReference": "TJHGSH",
       "airline": {
         "name": "Thai AirAsia X",
         "nameZh": "泰国亚洲航空X"
@@ -114,8 +124,9 @@
     },
     {
       "id": "xj611",
-      "journeyId": "outbound",
-      "sequence": 3,
+      "journeyId": "osaka",
+      "sequence": 1,
+      "bookingReference": "2TAZ8V",
       "airline": {
         "name": "Thai AirAsia X",
         "nameZh": "泰国亚洲航空X"
@@ -140,6 +151,7 @@
       "id": "tr885",
       "journeyId": "return",
       "sequence": 1,
+      "bookingReference": "N7C65S",
       "airline": {
         "name": "Scoot",
         "nameZh": "酷航"
@@ -164,6 +176,7 @@
       "id": "tr472",
       "journeyId": "return",
       "sequence": 2,
+      "bookingReference": "N7C65S",
       "airline": {
         "name": "Scoot",
         "nameZh": "酷航"
@@ -194,8 +207,7 @@
         "date": "2026-10-06"
       },
       "checkOut": {
-        "date": "2026-10-07",
-        "time": "10:00"
+        "date": "2026-10-07"
       }
     },
     {
@@ -206,8 +218,7 @@
         "date": "2026-10-07"
       },
       "checkOut": {
-        "date": "2026-10-09",
-        "time": "10:00"
+        "date": "2026-10-09"
       }
     },
     {
@@ -218,8 +229,7 @@
         "date": "2026-10-09"
       },
       "checkOut": {
-        "date": "2026-10-10",
-        "time": "10:00"
+        "date": "2026-10-10"
       }
     },
     {
@@ -231,8 +241,7 @@
         "date": "2026-10-10"
       },
       "checkOut": {
-        "date": "2026-10-12",
-        "time": "10:00"
+        "date": "2026-10-12"
       }
     },
     {
@@ -243,8 +252,7 @@
         "date": "2026-10-12"
       },
       "checkOut": {
-        "date": "2026-10-13",
-        "time": "10:00"
+        "date": "2026-10-13"
       }
     },
     {
@@ -255,8 +263,7 @@
         "date": "2026-10-13"
       },
       "checkOut": {
-        "date": "2026-10-14",
-        "time": "10:00"
+        "date": "2026-10-14"
       }
     },
     {
@@ -268,8 +275,7 @@
         "date": "2026-10-14"
       },
       "checkOut": {
-        "date": "2026-10-15",
-        "time": "10:00"
+        "date": "2026-10-15"
       }
     }
   ],
@@ -285,7 +291,7 @@
       "price": {
         "currency": "JPY",
         "amount": 26520,
-        "payAtCounter": false
+        "payAtCounter": true
       },
       "insurance": [
         "CDW",
@@ -300,10 +306,10 @@
       },
       "dropoff": {
         "date": "2026-10-14",
-        "time": "16:00",
+        "time": "20:00",
         "timeZoneLabel": "Japan Standard Time",
         "vehicleReturnPoint": "Nippon Rent-A-Car 神田（JR神田站周边）",
-        "deadlineWarning": "",
+        "deadlineWarning": "请于 20:00 之前还车",
         "recommendedArrivalTime": "",
         "utcOffset": "+09:00"
       }
@@ -377,10 +383,16 @@
           "text": "DMK → NRT，搭乘 Thai AirAsia X XJ 606"
         },
         {
+          "id": "d1-arrival",
+          "time": "19:45",
+          "type": "attraction",
+          "text": "抵达成田国际机场"
+        },
+        {
           "id": "d1-hotel",
           "time": "",
           "type": "check-in",
-          "text": "入住 Art Hotel"
+          "text": "入住 Art Hotel Narita"
         }
       ]
     },
@@ -394,22 +406,22 @@
       ],
       "schedule": [
         {
-          "id": "d2-hotel-out",
-          "time": "10:00",
-          "type": "check-out",
-          "text": "Art Hotel Check-out"
+          "id": "d2-flight",
+          "time": "08:30",
+          "type": "flight",
+          "text": "NRT → KIX，搭乘 Peach MM 304"
         },
         {
-          "id": "d2-flight",
-          "time": "09:15",
-          "type": "flight",
-          "text": "NRT → KIX，搭乘 Thai AirAsia X XJ 611"
+          "id": "d2-arrival",
+          "time": "10:05",
+          "type": "attraction",
+          "text": "抵达关西国际机场"
         },
         {
           "id": "d2-osaka",
           "time": "",
           "type": "walk",
-          "text": "抵达大阪后开始大阪行程"
+          "text": "前往大阪开始大阪行程"
         },
         {
           "id": "d2-hotel-in",
@@ -453,12 +465,6 @@
           "text": "奈良行程"
         },
         {
-          "id": "d4-osaka-out",
-          "time": "10:00",
-          "type": "check-out",
-          "text": "大阪 Airbnb Check-out"
-        },
-        {
           "id": "d4-tokyo-in",
           "time": "",
           "type": "check-in",
@@ -480,16 +486,10 @@
       ],
       "schedule": [
         {
-          "id": "d5-tokyo-airbnb-out",
-          "time": "10:00",
-          "type": "check-out",
-          "text": "东京 Airbnb① Check-out"
-        },
-        {
           "id": "d5-ikebukuro",
           "time": "",
           "type": "walk",
-          "text": "池袋站"
+          "text": "池袋站寄存行李"
         },
         {
           "id": "d5-kiyosumi",
@@ -642,12 +642,6 @@
       ],
       "schedule": [
         {
-          "id": "d8-kawaguchiko-out",
-          "time": "10:00",
-          "type": "check-out",
-          "text": "河口湖 Airbnb Check-out"
-        },
-        {
           "id": "d8-arakurayama",
           "time": "",
           "type": "attraction",
@@ -697,12 +691,6 @@
       ],
       "schedule": [
         {
-          "id": "d9-hakone-out",
-          "time": "10:00",
-          "type": "check-out",
-          "text": "箱根 Airbnb Check-out"
-        },
-        {
           "id": "d9-kamakura",
           "time": "",
           "type": "drive",
@@ -716,7 +704,7 @@
         },
         {
           "id": "d9-kanda-return",
-          "time": "16:00",
+          "time": "20:00",
           "type": "return",
           "text": "Nippon Rent-A-Car 神田（JR神田站周边）还车"
         },
@@ -745,12 +733,6 @@
         "Kuala Lumpur"
       ],
       "schedule": [
-        {
-          "id": "d10-hotel-out",
-          "time": "10:00",
-          "type": "check-out",
-          "text": "京成成田附近酒店 Check-out"
-        },
         {
           "id": "d10-flight-1",
           "time": "08:20",
@@ -873,7 +855,20 @@
   "ticketPlanning": {
     "statusStorage": "local",
     "statusStorageNote": "门票状态默认只保存在当前浏览器。",
-    "items": []
+    "items": [
+      {
+        "id": "t-todaiji",
+        "day": 2,
+        "name": "东大寺主殿门票",
+        "requirement": "现场购票 800 JPY"
+      },
+      {
+        "id": "t-kiyomizu",
+        "day": 3,
+        "name": "清水寺门票",
+        "requirement": "现场购票 500 JPY"
+      }
+    ]
   },
   "preTrip": {
     "packingItems": [],
@@ -904,23 +899,7 @@
     },
     "navigationPlaces": []
   },
-  "issuesAndUncertainties": [
-    {
-      "id": "group-size",
-      "status": "pending",
-      "text": "同行人数尚未提供"
-    },
-    {
-      "id": "accommodation-details",
-      "status": "pending",
-      "text": "各住宿的具体地址、入住时间及正式名称未全部提供"
-    },
-    {
-      "id": "day-5-flexible",
-      "status": "confirmed",
-      "text": "Day 5 东京行程为私人团自由行，不设置固定停留时间，可现场调整"
-    }
-  ],
+  "issuesAndUncertainties": [],
   "map": {
     "schemaVersion": "1.0-lite",
     "mapMode": "template-auto",
