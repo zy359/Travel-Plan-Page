@@ -1,7 +1,26 @@
 {
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "driving": false,
+      "todo": false,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
   "metadata": {
     "tripId": "tokyo-osaka-2026-10",
-    "title": "Tokyo × Osaka Trip 2026"
+    "title": "Tokyo × Osaka Trip 2026",
+    "language": "zh-CN",
+    "assets": {}
   },
   "trip": {
     "status": "draft",
@@ -12,21 +31,6 @@
     "primaryDestinationName": "日本",
     "heroTitle": null
   },
-  "config": {
-    "modules": {
-      "flights": true,
-      "overview": true,
-      "itinerary": true,
-      "driving": false,
-      "todo": false,
-      "ledger": true
-    },
-    "language": "zh",
-    "persistence": {
-      "mode": "local"
-    }
-  },
-
   "flightJourneys": [
     { "id": "journey-kul-nrt" },
     { "id": "journey-nrt-kix" },
@@ -71,7 +75,6 @@
       "arrival": { "airportCode": "Tokyo", "city": "东京/品川", "date": "2026-10-09", "time": "待确认", "utcOffset": "+09:00" }
     }
   ],
-
   "accommodations": [
     {
       "id": "acc-art-hotel-narita",
@@ -92,7 +95,6 @@
       "checkOut": "待补充"
     }
   ],
-
   "places": [
     { "id": "place-narita-airport", "name": "Narita Airport", "countryCode": "JP" },
     { "id": "place-art-hotel", "name": "Art Hotel Narita", "countryCode": "JP" },
@@ -121,18 +123,15 @@
     { "id": "place-kamakura", "name": "Kamakura", "countryCode": "JP" },
     { "id": "place-keisei-narita-sta", "name": "京成成田站", "countryCode": "JP" }
   ],
-
   "ticketPlanning": {
     "items": [
       { "id": "ticket-todaiji", "day": 2, "name": "东大寺主殿门票", "requirement": "现场购票 800 JPY" },
       { "id": "ticket-kiyomizudera", "day": 3, "name": "清水寺门票", "requirement": "现场购票 500 JPY" }
     ]
   },
-
   "preTrip": {
     "packingItems": []
   },
-
   "days": [
     {
       "day": 1,
@@ -254,7 +253,6 @@
       ]
     }
   ],
-
   "map": {
     "mapMode": "template-auto",
     "templateId": "auto",
@@ -263,6 +261,5 @@
     "routes": [],
     "dailyRoutes": []
   },
-
   "rentalCar": null
 }
