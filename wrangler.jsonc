@@ -1,0 +1,8 @@
+{
+  "name": "sushi-trip-26",
+  "compatibility_date": "2026-09-11",
+  "assets": {
+    "directory": ".",
+    "exclude": ["node_modules/**", ".git/**", ".github/**"]
+  }
+}
