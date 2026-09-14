@@ -111,10 +111,40 @@
       "id": "accom-tokyo",
       "name": "清澄白河 Apartment Hotel 11 Ebisucho",
       "checkIn": "2026-10-09",
-      "checkOut": "2026-10-11"
+      "checkOut": "2026-10-15"
     }
   ],
-  "rentalCar": null,
+  "rentalCar": {
+    "company": "Nippon Rent-A-Car",
+    "rentalPeriodDays": 3,
+    "vehicle": {
+      "example": "Standard Car",
+      "class": "S"
+    },
+    "unlimitedKilometers": true,
+    "price": {
+      "currency": "JPY",
+      "total": 26560,
+      "payAtCounter": 26560
+    },
+    "insurance": ["CDW免责补偿", "NOC安心险"],
+    "pickup": {
+      "date": "2026-10-12",
+      "time": "07:00",
+      "location": "新宿",
+      "address": "新宿营业所",
+      "utcOffset": "+09:00"
+    },
+    "dropoff": {
+      "date": "2026-10-14",
+      "time": "16:00",
+      "timeZoneLabel": "JST",
+      "vehicleReturnPoint": "神田",
+      "deadlineWarning": "请准时于 16:00 前还车",
+      "recommendedArrivalTime": "15:30",
+      "utcOffset": "+09:00"
+    }
+  },
   "places": [
     { "id": "p-nrt", "name": "成田国际机场", "countryCode": "JP" },
     { "id": "p-arthotel", "name": "Art Hotel Narita", "countryCode": "JP" },
@@ -272,7 +302,7 @@
       "title": "新宿取车 · 河口湖",
       "locations": ["p-shinjuku", "p-arakurayama", "p-oishi-park", "p-kawaguchiko"],
       "schedule": [
-        { "id": "d7-1", "time": "09:00", "type": "driving", "text": "新宿取车（租车3天，26560円，含至神田还车）" },
+        { "id": "d7-1", "time": "07:00", "type": "driving", "text": "新宿营业所取车（租车3天，26560円，含至神田还车）" },
         { "id": "d7-2", "time": "11:00", "type": "activity", "text": "新仓山浅间公园 · 五重塔富士山打卡" },
         { "id": "d7-3", "time": "13:00", "type": "activity", "text": "大石公园 · 富士大石花园平台" },
         { "id": "d7-4", "time": "17:00", "type": "activity", "text": "入住河口湖" }
