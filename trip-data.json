@@ -1,5 +1,4 @@
 {
-  "$schema": "./schemas/trip-data.schema.json",
   "schemaVersion": "2.0-lite",
   "config": {
     "schemaVersion": "1.0.0",
@@ -381,7 +380,7 @@
       { "day": 2, "routeIds": ["r-1", "r-2", "r-3"] },
       { "day": 3, "routeIds": ["r-4"] },
       { "day": 4, "routeIds": ["r-5"] },
-      { "day": 5, "routeIds": [] },
+      { "day": 5, "routeIds": ["r-6"] },
       { "day": 6, "routeIds": ["r-6"] },
       { "day": 7, "routeIds": ["r-7"] },
       { "day": 8, "routeIds": ["r-8"] },
