@@ -1,113 +1,221 @@
 {
-  "$schema": "./schemas/trip-data.schema.json",
-  "schemaVersion": "2.0-lite",
+  "metadata": {
+    "tripId": "tokyo-osaka-2026",
+    "title": "TOKYO OSAKA TRIP 2026",
+    "assets": {
+      "routeMaps": null
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-10-06",
+    "endDate": "2026-10-15",
+    "dayCount": 10,
+    "primaryDestinationCountries": ["Japan"],
+    "primaryDestinationName": "东京大阪",
+    "heroTitle": null
+  },
   "config": {
-    "schemaVersion": "1.0.0",
     "modules": {
       "flights": true,
       "overview": true,
       "itinerary": true,
       "driving": true,
-      "todo": true,
-      "ledger": true
+      "todo": false,
+      "ledger": true,
+      "tickets": true
     },
     "language": "zh-CN",
     "persistence": {
       "mode": "local"
     }
   },
-  "metadata": {
-    "tripId": "japan-trip-2026-10",
-    "title": "Japan Trip 2026",
-    "language": "zh-CN",
-    "assets": {}
-  },
-  "trip": {
-    "status": "planned",
-    "startDate": "2026-10-06",
-    "endDate": "2026-10-15",
-    "dayCount": 10,
-    "primaryDestinationCountries": ["Japan"],
-    "primaryDestinationName": "日本",
-    "heroTitle": "日本关东 × 关西 10日深度游"
+  "map": {
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "regions": [
+      {
+        "regionId": "japan",
+        "countryCode": "JP",
+        "places": [
+          { "id": "p-nrt", "name": "成田国际机场", "lat": 35.7719, "lng": 140.3929 },
+          { "id": "p-arthotel", "name": "Art Hotel Narita", "lat": 35.7860, "lng": 140.3260 },
+          { "id": "p-kix", "name": "关西国际机场", "lat": 34.4320, "lng": 135.2304 },
+          { "id": "p-osaka-airbnb", "name": "大阪惠美须町 Airbnb", "lat": 34.6520, "lng": 135.5060 },
+          { "id": "p-nara-todaiji", "name": "东大寺", "lat": 34.6890, "lng": 135.8398 },
+          { "id": "p-nara-park", "name": "奈良公园", "lat": 34.6851, "lng": 135.8430 },
+          { "id": "p-dotonbori", "name": "道顿堀", "lat": 34.6687, "lng": 135.5030 },
+          { "id": "p-shinsaibashi", "name": "心斋桥", "lat": 34.6737, "lng": 135.5010 },
+          { "id": "p-fushimi-inari", "name": "伏见稻荷大社", "lat": 34.9671, "lng": 135.7727 },
+          { "id": "p-kiyomizu", "name": "清水寺", "lat": 34.9949, "lng": 135.7850 },
+          { "id": "p-gion", "name": "花见小路/祇园", "lat": 35.0037, "lng": 135.7756 },
+          { "id": "p-pontocho", "name": "先斗町/鸭川", "lat": 35.0090, "lng": 135.7700 },
+          { "id": "p-kuromon", "name": "黑门市场", "lat": 34.6656, "lng": 135.5065 },
+          { "id": "p-umeda", "name": "梅田商圈", "lat": 34.7024, "lng": 135.4959 },
+          { "id": "p-osaka-castle", "name": "大阪城", "lat": 34.6873, "lng": 135.5262 },
+          { "id": "p-shin-osaka", "name": "新大阪站", "lat": 34.7338, "lng": 135.5000 },
+          { "id": "p-tokyo-sta", "name": "东京站", "lat": 35.6812, "lng": 139.7671 },
+          { "id": "p-ikebukuro", "name": "池袋站", "lat": 35.7295, "lng": 139.7109 },
+          { "id": "p-tokyo-airbnb", "name": "清澄白河 Airbnb", "lat": 35.6816, "lng": 139.8003 },
+          { "id": "p-asakusa", "name": "浅草", "lat": 35.7148, "lng": 139.7967 },
+          { "id": "p-ginza", "name": "银座", "lat": 35.6717, "lng": 139.7650 },
+          { "id": "p-harajuku", "name": "原宿", "lat": 35.6702, "lng": 139.7026 },
+          { "id": "p-shinjuku", "name": "新宿", "lat": 35.6896, "lng": 139.7006 },
+          { "id": "p-nikko-toshogu", "name": "日光东照宫", "lat": 36.7581, "lng": 139.5994 },
+          { "id": "p-kegon-falls", "name": "华严瀑布", "lat": 36.7414, "lng": 139.4986 },
+          { "id": "p-chuzenji", "name": "中禅寺湖", "lat": 36.7382, "lng": 139.4805 },
+          { "id": "p-kawaguchiko", "name": "河口湖", "lat": 35.5000, "lng": 138.7500 },
+          { "id": "p-arakurayama", "name": "新仓山浅间公园", "lat": 35.4967, "lng": 138.8064 },
+          { "id": "p-oishi-park", "name": "大石公园", "lat": 35.5233, "lng": 138.7186 },
+          { "id": "p-hakone-owakudani", "name": "大涌谷", "lat": 35.2382, "lng": 139.0198 },
+          { "id": "p-hakone-ashinoko", "name": "芦之湖", "lat": 35.2050, "lng": 139.0230 },
+          { "id": "p-hakone-shrine", "name": "箱根神社", "lat": 35.2013, "lng": 139.0257 },
+          { "id": "p-kamakura-daibutsu", "name": "高德院 · 镰仓大佛", "lat": 35.3167, "lng": 139.5359 },
+          { "id": "p-tsurugaoka", "name": "鹤冈八幡宫", "lat": 35.3260, "lng": 139.5563 },
+          { "id": "p-komachi", "name": "小町通", "lat": 35.3192, "lng": 139.5498 },
+          { "id": "p-kanda", "name": "神田(还车点)", "lat": 35.6918, "lng": 139.7710 }
+        ],
+        "routes": [
+          { "day": "day-1", "placeIds": ["p-nrt", "p-arthotel"] },
+          { "day": "day-2", "placeIds": ["p-kix", "p-osaka-airbnb", "p-nara-todaiji", "p-dotonbori"] },
+          { "day": "day-3", "placeIds": ["p-osaka-airbnb", "p-fushimi-inari", "p-kiyomizu", "p-gion", "p-pontocho"] },
+          { "day": "day-4", "placeIds": ["p-kuromon", "p-umeda", "p-osaka-castle", "p-shin-osaka", "p-ikebukuro"] },
+          { "day": "day-5", "placeIds": ["p-ikebukuro", "p-tokyo-airbnb", "p-asakusa", "p-ginza", "p-harajuku", "p-shinjuku"] },
+          { "day": "day-6", "placeIds": ["p-tokyo-airbnb", "p-nikko-toshogu", "p-kegon-falls", "p-chuzenji"] },
+          { "day": "day-7", "placeIds": ["p-shinjuku", "p-kawaguchiko", "p-arakurayama", "p-oishi-park"] },
+          { "day": "day-8", "placeIds": ["p-kawaguchiko", "p-hakone-owakudani", "p-hakone-ashinoko", "p-hakone-shrine"] },
+          { "day": "day-9", "placeIds": ["p-hakone-shrine", "p-kamakura-daibutsu", "p-tsurugaoka", "p-komachi", "p-kanda"] },
+          { "day": "day-10", "placeIds": ["p-kanda", "p-nrt"] }
+        ],
+        "dailyRoutes": [
+          { "day": "day-1", "placeIds": ["p-nrt", "p-arthotel"] },
+          { "day": "day-2", "placeIds": ["p-kix", "p-osaka-airbnb", "p-nara-todaiji", "p-nara-park", "p-dotonbori", "p-shinsaibashi"] },
+          { "day": "day-3", "placeIds": ["p-osaka-airbnb", "p-fushimi-inari", "p-kiyomizu", "p-gion", "p-pontocho", "p-osaka-airbnb"] },
+          { "day": "day-4", "placeIds": ["p-osaka-airbnb", "p-kuromon", "p-umeda", "p-osaka-castle", "p-shin-osaka", "p-ikebukuro"] },
+          { "day": "day-5", "placeIds": ["p-ikebukuro", "p-tokyo-airbnb", "p-asakusa", "p-ginza", "p-harajuku", "p-shinjuku", "p-tokyo-airbnb"] },
+          { "day": "day-6", "placeIds": ["p-tokyo-airbnb", "p-nikko-toshogu", "p-kegon-falls", "p-chuzenji", "p-tokyo-airbnb"] },
+          { "day": "day-7", "placeIds": ["p-shinjuku", "p-arakurayama", "p-oishi-park", "p-kawaguchiko"] },
+          { "day": "day-8", "placeIds": ["p-kawaguchiko", "p-hakone-owakudani", "p-hakone-ashinoko", "p-hakone-shrine"] },
+          { "day": "day-9", "placeIds": ["p-hakone-shrine", "p-kamakura-daibutsu", "p-tsurugaoka", "p-komachi", "p-kanda"] },
+          { "day": "day-10", "placeIds": ["p-kanda", "p-nrt"] }
+        ]
+      }
+    ]
   },
   "flightJourneys": [
-    { "id": "journey-kul-nrt" },
-    { "id": "journey-nrt-kix" },
-    { "id": "journey-shinosaka-tokyo" }
+    { "id": "journey-outbound" },
+    { "id": "journey-return" }
   ],
   "flights": [
     {
-      "id": "flight-ak880",
-      "journeyId": "journey-kul-nrt",
+      "id": "f-ak880",
+      "journeyId": "journey-outbound",
       "sequence": 1,
-      "airline": { "name": "AirAsia" },
+      "airline": { "name": "AirAsia", "nameZh": "亚洲航空" },
       "flightNumber": "AK880",
       "departure": { "airportCode": "KUL", "city": "吉隆坡", "date": "2026-10-06", "time": "08:10", "utcOffset": "+08:00" },
       "arrival": { "airportCode": "DMK", "city": "曼谷-廊曼", "date": "2026-10-06", "time": "09:30", "utcOffset": "+07:00" }
     },
     {
-      "id": "flight-xj606",
-      "journeyId": "journey-kul-nrt",
+      "id": "f-xj606",
+      "journeyId": "journey-outbound",
       "sequence": 2,
-      "airline": { "name": "Thai AirAsia X" },
+      "airline": { "name": "Thai AirAsia X", "nameZh": "泰国亚航X" },
       "flightNumber": "XJ606",
       "departure": { "airportCode": "DMK", "city": "曼谷-廊曼", "date": "2026-10-06", "time": "11:15", "utcOffset": "+07:00" },
       "arrival": { "airportCode": "NRT", "city": "东京-成田", "date": "2026-10-06", "time": "19:45", "utcOffset": "+09:00" }
     },
     {
-      "id": "flight-mm304",
-      "journeyId": "journey-nrt-kix",
+      "id": "f-tr885",
+      "journeyId": "journey-return",
       "sequence": 1,
-      "airline": { "name": "Peach Aviation" },
-      "flightNumber": "MM304",
-      "departure": { "airportCode": "NRT", "city": "Tokyo Narita", "date": "2026-10-07", "time": "08:30", "utcOffset": "+09:00" },
-      "arrival": { "airportCode": "KIX", "city": "Osaka Kansai", "date": "2026-10-07", "time": "10:05", "utcOffset": "+09:00" }
+      "airline": { "name": "Scoot", "nameZh": "酷航" },
+      "flightNumber": "TR885",
+      "aircraft": "B787-9",
+      "bookingRef": "N7C65S",
+      "departure": { "airportCode": "NRT", "city": "成田国际机场 T1", "date": "2026-10-15", "time": "08:20", "utcOffset": "+09:00" },
+      "arrival": { "airportCode": "SIN", "city": "樟宜机场 T1", "date": "2026-10-15", "time": "14:35", "utcOffset": "+08:00" }
     },
     {
-      "id": "flight-shinkansen-day4",
-      "journeyId": "journey-shinosaka-tokyo",
-      "sequence": 1,
-      "airline": { "name": "JR东海道新干线" },
-      "flightNumber": "Hikari 668",
-      "departure": { "airportCode": "Shin-Osaka", "city": "新大阪", "date": "2026-10-09", "time": "18:00", "utcOffset": "+09:00" },
-      "arrival": { "airportCode": "Tokyo", "city": "品川/东京", "date": "2026-10-09", "time": "20:44", "utcOffset": "+09:00" }
+      "id": "f-tr472",
+      "journeyId": "journey-return",
+      "sequence": 2,
+      "airline": { "name": "Scoot", "nameZh": "酷航" },
+      "flightNumber": "TR472",
+      "aircraft": "A321neo",
+      "bookingRef": "N7C65S",
+      "departure": { "airportCode": "SIN", "city": "樟宜机场 T1", "date": "2026-10-15", "time": "16:00", "utcOffset": "+08:00" },
+      "arrival": { "airportCode": "KUL", "city": "吉隆坡国际机场 T2", "date": "2026-10-15", "time": "17:25", "utcOffset": "+08:00" }
     }
+  ],
+  "places": [
+    { "id": "place-arthotel", "name": "Art Hotel Narita" },
+    { "id": "place-osaka-airbnb", "name": "大阪惠美须町站前店" },
+    { "id": "place-tokyo-airbnb", "name": "清澄白河 Apartment Hotel" }
   ],
   "accommodations": [
     {
-      "id": "acc-art-hotel-narita",
+      "id": "accom-narita",
       "name": "Art Hotel Narita",
       "checkIn": "2026-10-06",
       "checkOut": "2026-10-07"
     },
     {
-      "id": "acc-osaka-airbnb",
-      "name": "大阪惠美须町站前店 (Apartment Hotel 11 Ebisucho)",
+      "id": "accom-osaka",
+      "name": "大阪惠美须町站前店 Airbnb",
       "checkIn": "2026-10-07",
-      "checkOut": "2026-10-09"
+      "checkOut": "2026-10-09",
+      "priceJPY": 27920,
+      "notes": "2间卧室 · 7张床 · 65㎡(含阳台79㎡) · 2卫2浴"
     },
     {
-      "id": "acc-tokyo-sakura",
-      "name": "Sakura Hotel Ikebukuro",
+      "id": "accom-tokyo",
+      "name": "清澄白河 Apartment Hotel 11 Ebisucho",
       "checkIn": "2026-10-09",
-      "checkOut": "2026-10-15"
+      "checkOut": "2026-10-11"
     }
   ],
-  "places": [
-    { "id": "place-narita", "name": "成田机场", "countryCode": "JP" },
-    { "id": "place-kix", "name": "关西机场", "countryCode": "JP" },
-    { "id": "place-osaka", "name": "大阪", "countryCode": "JP" },
-    { "id": "place-nara", "name": "奈良", "countryCode": "JP" },
-    { "id": "place-kyoto", "name": "京都", "countryCode": "JP" },
-    { "id": "place-tokyo", "name": "东京", "countryCode": "JP" },
-    { "id": "place-nikko", "name": "日光", "countryCode": "JP" },
-    { "id": "place-kawaguchiko", "name": "河口湖/富士山", "countryCode": "JP" },
-    { "id": "place-hakone", "name": "箱根", "countryCode": "JP" },
-    { "id": "place-kamakura", "name": "镰仓", "countryCode": "JP" }
-  ],
+  "rentalCar": {
+    "company": null,
+    "rentalPeriodDays": 3,
+    "vehicle": { "example": null, "class": null },
+    "unlimitedKilometers": null,
+    "price": { "currency": "JPY", "total": 26560, "payAtCounter": null },
+    "insurance": [],
+    "pickup": {
+      "date": "2026-10-12",
+      "time": null,
+      "location": "新宿",
+      "address": null,
+      "utcOffset": "+09:00"
+    },
+    "dropoff": {
+      "date": "2026-10-14",
+      "time": null,
+      "timeZoneLabel": "JST",
+      "vehicleReturnPoint": "神田",
+      "deadlineWarning": null,
+      "recommendedArrivalTime": null,
+      "utcOffset": "+09:00"
+    }
+  },
   "ticketPlanning": {
-    "items": []
+    "items": [
+      {
+        "id": "t-todaiji",
+        "dayId": "day-2",
+        "name": "东大寺主殿门票",
+        "requirement": "现场购票",
+        "priceJPY": 800
+      },
+      {
+        "id": "t-kiyomizu",
+        "dayId": "day-3",
+        "name": "清水寺门票",
+        "requirement": "现场购票",
+        "priceJPY": 500
+      }
+    ]
   },
   "preTrip": {
     "packingItems": []
@@ -116,154 +224,146 @@
     {
       "day": 1,
       "date": "2026-10-06",
-      "title": "Arrive Narita",
-      "locations": ["place-narita"],
+      "title": "抵达成田",
+      "locations": ["p-nrt", "p-arthotel"],
       "schedule": [
-        { "id": "d1-s1", "time": "19:45", "type": "flight", "text": "抵达成田机场 T2" },
-        { "id": "d1-s2", "time": "20:30", "type": "transport", "text": "搭乘机场免费接驳巴士前往 Art Hotel Narita" },
-        { "id": "d1-s3", "time": "21:30", "type": "activity", "text": "酒店附近 FamilyMart 晚餐" }
+        { "id": "d1-1", "time": "08:10", "type": "flight", "text": "KUL → DMK → NRT，AK880 转 XJ606" },
+        { "id": "d1-2", "time": "19:45", "type": "arrival", "text": "抵达成田国际机场 T1" },
+        { "id": "d1-3", "time": "20:00", "type": "transport", "text": "乘坐成田机场免费接驳巴士(T2出发)前往 Art Hotel Narita" },
+        { "id": "d1-4", "time": "21:00", "type": "meal", "text": "酒店附近 FamilyMart 简单晚餐" }
       ]
     },
     {
       "day": 2,
       "date": "2026-10-07",
-      "title": "Narita ✈️ Kansai, Nara day trip",
-      "locations": ["place-kix", "place-osaka", "place-nara"],
+      "title": "关西空港 · 奈良日归 · 道顿堀",
+      "locations": ["p-kix", "p-osaka-airbnb", "p-nara-todaiji", "p-nara-park", "p-dotonbori", "p-shinsaibashi"],
       "schedule": [
-        { "id": "d2-s1", "time": "08:30", "type": "flight", "text": "Peach MM304 成田→关西" },
-        { "id": "d2-s2", "time": "10:05", "type": "flight", "text": "抵达关西机场 T2" },
-        { "id": "d2-s3", "time": "11:00", "type": "transport", "text": "关西机场→南海难波→天下茶屋换乘→惠美须町 Airbnb" },
-        { "id": "d2-s4", "time": "12:30", "type": "activity", "text": "Airbnb 放行李，午餐" },
-        { "id": "d2-s5", "time": "13:30", "type": "transport", "text": "近铁前往奈良（单程约44min）" },
-        { "id": "d2-s6", "time": "14:30", "type": "activity", "text": "奈良公园、东大寺主殿、二月堂" },
-        { "id": "d2-s7", "time": "19:00", "type": "activity", "text": "返回道顿堀、心斋桥晚餐" }
+        { "id": "d2-1", "time": "08:30", "type": "flight", "text": "NRT → KIX，Peach MM304（Airbus A320）" },
+        { "id": "d2-2", "time": "10:05", "type": "arrival", "text": "抵达关西机场 T2，接驳巴士至 T1" },
+        { "id": "d2-3", "time": "11:06", "type": "transport", "text": "南海/堺筋线转乘至惠美须町，约50分钟，1160円", "placeIds": ["p-osaka-airbnb"] },
+        { "id": "d2-4", "time": "11:30", "type": "activity", "text": "Airbnb 放行李，附近简餐午饭" },
+        { "id": "d2-5", "time": "12:26", "type": "transport", "text": "前往奈良（惠美须町↔近铁奈良，往返约1740円，单程44分钟）", "placeIds": ["p-nara-todaiji"] },
+        { "id": "d2-6", "time": "13:30", "type": "sightseeing", "text": "东大寺主殿参观", "placeIds": ["p-nara-todaiji"], "ticketIds": ["t-todaiji"] },
+        { "id": "d2-7", "time": "14:30", "type": "sightseeing", "text": "二月堂 · 奈良公园漫步", "placeIds": ["p-nara-park"] },
+        { "id": "d2-8", "time": "16:30", "type": "transport", "text": "返回大阪 Airbnb，check-in 休息" },
+        { "id": "d2-9", "time": "18:34", "type": "sightseeing", "text": "道顿堀固力果招牌 · 心斋桥步行街", "placeIds": ["p-dotonbori", "p-shinsaibashi"] },
+        { "id": "d2-10", "time": "19:30", "type": "meal", "text": "道顿堀 / 心斋桥晚餐" }
       ]
     },
     {
       "day": 3,
       "date": "2026-10-08",
-      "title": "Kyoto day trip",
-      "locations": ["place-kyoto"],
+      "title": "京都日归",
+      "locations": ["p-fushimi-inari", "p-kiyomizu", "p-gion", "p-pontocho"],
       "schedule": [
-        { "id": "d3-s1", "time": "08:30", "type": "transport", "text": "Airbnb→伏见稻荷大社（约1h）" },
-        { "id": "d3-s2", "time": "09:30", "type": "activity", "text": "伏见稻荷神社（千本鸟居）" },
-        { "id": "d3-s3", "time": "11:30", "type": "activity", "text": "清水寺、三年坂、二年坂散策" },
-        { "id": "d3-s4", "time": "14:00", "type": "activity", "text": "法观寺打卡、八坂神社" },
-        { "id": "d3-s5", "time": "16:00", "type": "activity", "text": "花见小路 / 祇园散步" },
-        { "id": "d3-s6", "time": "18:00", "type": "activity", "text": "先斗町、鸭川晚餐" }
+        { "id": "d3-1", "time": "06:27", "type": "transport", "text": "惠美须町出发，往返丹波桥换乘，约1小时6分，720円" },
+        { "id": "d3-2", "time": "07:34", "type": "sightseeing", "text": "伏见稻荷大社 · 千本鸟居", "placeIds": ["p-fushimi-inari"] },
+        { "id": "d3-3", "time": "09:15", "type": "transport", "text": "京阪本线+206市巴士，约30分钟，410円（车180+巴士230）" },
+        { "id": "d3-4", "time": "09:43", "type": "sightseeing", "text": "清水寺", "placeIds": ["p-kiyomizu"], "ticketIds": ["t-kiyomizu"] },
+        { "id": "d3-5", "time": "10:30", "type": "sightseeing", "text": "三年坂 · 二年坂商业街", "placeIds": ["p-kiyomizu"] },
+        { "id": "d3-6", "time": "10:45", "type": "sightseeing", "text": "法观寺（打卡点）· 八坂神社", "placeIds": ["p-gion"] },
+        { "id": "d3-7", "time": "11:30", "type": "meal", "text": "午餐" },
+        { "id": "d3-8", "time": "12:00", "type": "sightseeing", "text": "花见小路 · 祇园散步路线", "placeIds": ["p-gion"] },
+        { "id": "d3-9", "time": "18:00", "type": "meal", "text": "先斗町 / 鸭川沿岸晚餐", "placeIds": ["p-pontocho"] },
+        { "id": "d3-10", "time": "18:35", "type": "transport", "text": "京都河原町返回惠美须町 Airbnb，约1小时3分，650円" }
       ]
     },
     {
       "day": 4,
       "date": "2026-10-09",
-      "title": "黑门市场、大阪城 🚄 东京",
-      "locations": ["place-osaka", "place-tokyo"],
+      "title": "大阪城市漫步 · 新干线赴东京",
+      "locations": ["p-kuromon", "p-umeda", "p-osaka-castle", "p-shin-osaka", "p-ikebukuro"],
       "schedule": [
-        { "id": "d4-s1", "time": "09:00", "type": "activity", "text": "黑门市场早餐与逛街" },
-        { "id": "d4-s2", "time": "11:00", "type": "activity", "text": "逛梅田商圈（阪急、大丸、LUCUA）" },
-        { "id": "d4-s3", "time": "14:30", "type": "activity", "text": "大阪城公园参观" },
-        { "id": "d4-s4", "time": "18:00", "type": "transport", "text": "新大阪站搭乘新干线赴东京（Hikari 668）" },
-        { "id": "d4-s5", "time": "21:00", "type": "activity", "text": "抵达品川转山手线至池袋 Sakura Hotel" }
+        { "id": "d4-1", "time": "09:00", "type": "sightseeing", "text": "黑门市场（退房前）", "placeIds": ["p-kuromon"] },
+        { "id": "d4-2", "time": "09:47", "type": "transport", "text": "动物园前站 Daikoku Locker 寄存行李" },
+        { "id": "d4-3", "time": "10:23", "type": "sightseeing", "text": "梅田商圈：阪急/阪神/大丸/Lucua/Hep Five", "placeIds": ["p-umeda"] },
+        { "id": "d4-4", "time": "13:14", "type": "sightseeing", "text": "大阪城公园 / 天守阁", "placeIds": ["p-osaka-castle"] },
+        { "id": "d4-5", "time": "15:14", "type": "transport", "text": "返回动物园前取回行李，14分钟，200円" },
+        { "id": "d4-6", "time": "15:23", "type": "transport", "text": "动物园前 → 新大阪站，21分钟，290円", "placeIds": ["p-shin-osaka"] },
+        { "id": "d4-7", "time": "15:18", "type": "transport", "text": "新干线 Hikari 656（Shin-Osaka → Tokyo），15:18-18:12" },
+        { "id": "d4-8", "time": "18:17", "type": "transport", "text": "东京站 → 池袋站，丸之内线，17分钟，209円", "placeIds": ["p-ikebukuro"] },
+        { "id": "d4-9", "time": "19:00", "type": "activity", "text": "入住东京酒店 · 晚餐" }
       ]
     },
     {
       "day": 5,
       "date": "2026-10-10",
-      "title": "Tokyo City Walk",
-      "locations": ["place-tokyo"],
+      "title": "东京市区漫步",
+      "locations": ["p-ikebukuro", "p-tokyo-airbnb", "p-asakusa", "p-ginza", "p-harajuku", "p-shinjuku"],
       "schedule": [
-        { "id": "d5-s1", "time": "10:00", "type": "activity", "text": "东京市区观光与购物" }
+        { "id": "d5-1", "time": "09:00", "type": "transport", "text": "池袋站寄存/取行李" },
+        { "id": "d5-2", "time": "10:00", "type": "transport", "text": "前往清澄白河站，check-in Airbnb" },
+        { "id": "d5-3", "time": "11:00", "type": "sightseeing", "text": "浅草寺 · 仲见世通", "placeIds": ["p-asakusa"] },
+        { "id": "d5-4", "time": "13:00", "type": "meal", "text": "银座午餐 · 购物", "placeIds": ["p-ginza"] },
+        { "id": "d5-5", "time": "15:30", "type": "sightseeing", "text": "原宿竹下通", "placeIds": ["p-harajuku"] },
+        { "id": "d5-6", "time": "18:00", "type": "meal", "text": "新宿晚餐", "placeIds": ["p-shinjuku"] },
+        { "id": "d5-7", "time": "20:30", "type": "transport", "text": "返回清澄白河 Airbnb" }
       ]
     },
     {
       "day": 6,
       "date": "2026-10-11",
-      "title": "Nikko Day Trip",
-      "locations": ["place-nikko"],
+      "title": "日光日归",
+      "locations": ["p-nikko-toshogu", "p-kegon-falls", "p-chuzenji"],
       "schedule": [
-        { "id": "d6-s1", "time": "08:00", "type": "transport", "text": "浅草搭乘东武铁道前往日光" },
-        { "id": "d6-s2", "time": "10:30", "type": "activity", "text": "日光东照宫、二荒山神社" }
+        { "id": "d6-1", "time": "07:30", "type": "transport", "text": "东武浅草站乘特急前往日光，约2小时" },
+        { "id": "d6-2", "time": "09:30", "type": "sightseeing", "text": "日光东照宫 · 二荒山神社 · 轮王寺（二社一寺）", "placeIds": ["p-nikko-toshogu"], "status": "待确认" },
+        { "id": "d6-3", "time": "13:00", "type": "sightseeing", "text": "中禅寺湖畔散策", "placeIds": ["p-chuzenji"], "status": "待确认" },
+        { "id": "d6-4", "time": "14:00", "type": "sightseeing", "text": "华严瀑布", "placeIds": ["p-kegon-falls"], "status": "待确认" },
+        { "id": "d6-5", "time": "17:00", "type": "transport", "text": "返回东京" }
       ]
     },
     {
       "day": 7,
       "date": "2026-10-12",
-      "title": "富士山河口湖",
-      "locations": ["place-kawaguchiko"],
+      "title": "新宿取车 · 河口湖",
+      "locations": ["p-shinjuku", "p-arakurayama", "p-oishi-park", "p-kawaguchiko"],
       "schedule": [
-        { "id": "d7-s1", "time": "08:00", "type": "transport", "text": "出发前往河口湖" },
-        { "id": "d7-s2", "time": "11:00", "type": "activity", "text": "河口湖畔欣赏富士山全景" }
+        { "id": "d7-1", "time": "09:00", "type": "driving", "text": "新宿取车（租车3天，26560円，含至神田还车）", "placeIds": ["p-shinjuku"] },
+        { "id": "d7-2", "time": "11:00", "type": "sightseeing", "text": "新仓山浅间公园 · 五重塔富士山打卡", "placeIds": ["p-arakurayama"], "status": "待确认" },
+        { "id": "d7-3", "time": "13:00", "type": "sightseeing", "text": "大石公园 · 富士大石花园平台", "placeIds": ["p-oishi-park"], "status": "待确认" },
+        { "id": "d7-4", "time": "17:00", "type": "activity", "text": "入住河口湖", "placeIds": ["p-kawaguchiko"], "status": "待确认" }
       ]
     },
     {
       "day": 8,
       "date": "2026-10-13",
-      "title": "箱根温泉",
-      "locations": ["place-hakone"],
+      "title": "箱根",
+      "locations": ["p-hakone-owakudani", "p-hakone-ashinoko", "p-hakone-shrine"],
       "schedule": [
-        { "id": "d8-s1", "time": "09:00", "type": "activity", "text": "箱根芦之湖海贼船与大涌谷观光" }
+        { "id": "d8-1", "time": "09:00", "type": "driving", "text": "驱车前往箱根" },
+        { "id": "d8-2", "time": "11:00", "type": "sightseeing", "text": "大涌谷", "placeIds": ["p-hakone-owakudani"], "status": "待确认" },
+        { "id": "d8-3", "time": "13:00", "type": "sightseeing", "text": "芦之湖 · 海贼船", "placeIds": ["p-hakone-ashinoko"], "status": "待确认" },
+        { "id": "d8-4", "time": "15:00", "type": "sightseeing", "text": "箱根神社（水中鸟居）", "placeIds": ["p-hakone-shrine"], "status": "待确认" },
+        { "id": "d8-5", "time": "18:00", "type": "activity", "text": "入住箱根", "status": "待确认" }
       ]
     },
     {
       "day": 9,
       "date": "2026-10-14",
-      "title": "镰仓 🚊 成田",
-      "locations": ["place-kamakura", "place-narita"],
+      "title": "镰仓 · 神田还车",
+      "locations": ["p-kamakura-daibutsu", "p-tsurugaoka", "p-komachi", "p-kanda"],
       "schedule": [
-        { "id": "d9-s1", "time": "10:00", "type": "activity", "text": "镰仓高校前、江之岛散策" },
-        { "id": "d9-s2", "time": "17:00", "type": "transport", "text": "前往成田住一晚" }
+        { "id": "d9-1", "time": "09:00", "type": "driving", "text": "驱车前往镰仓" },
+        { "id": "d9-2", "time": "11:00", "type": "sightseeing", "text": "高德院 · 镰仓大佛", "placeIds": ["p-kamakura-daibutsu"], "status": "待确认" },
+        { "id": "d9-3", "time": "13:00", "type": "sightseeing", "text": "鹤冈八幡宫", "placeIds": ["p-tsurugaoka"], "status": "待确认" },
+        { "id": "d9-4", "time": "14:00", "type": "sightseeing", "text": "小町通逛街 · 午餐", "placeIds": ["p-komachi"], "status": "待确认" },
+        { "id": "d9-5", "time": "16:00", "type": "driving", "text": "驱车返回神田还车", "placeIds": ["p-kanda"] },
+        { "id": "d9-6", "time": "18:00", "type": "transport", "text": "前往京成成田站附近，为次日航班做准备" }
       ]
     },
     {
       "day": 10,
       "date": "2026-10-15",
-      "title": "Narita ✈️ Kuala Lumpur",
-      "locations": ["place-narita"],
+      "title": "成田返回吉隆坡",
+      "locations": ["p-nrt"],
       "schedule": [
-        { "id": "d10-s1", "time": "10:00", "type": "flight", "text": "成田机场搭乘航班返回吉隆坡" }
+        { "id": "d10-1", "time": "08:20", "type": "flight", "text": "NRT → SIN，Scoot TR885，预订编号 N7C65S" },
+        { "id": "d10-2", "time": "14:35", "type": "transport", "text": "樟宜机场转机 1小时25分" },
+        { "id": "d10-3", "time": "16:00", "type": "flight", "text": "SIN → KUL，Scoot TR472" },
+        { "id": "d10-4", "time": "17:25", "type": "arrival", "text": "抵达吉隆坡国际机场 T2，行程结束" }
       ]
     }
-  ],
-  "map": {
-    "mapMode": "template-auto",
-    "templateId": "japan",
-    "region": "Japan",
-    "places": [
-      { "id": "p-narita", "name": "成田机场", "x": 78, "y": 42 },
-      { "id": "p-tokyo", "name": "东京", "x": 72, "y": 45 },
-      { "id": "p-kix", "name": "关西机场", "x": 35, "y": 68 },
-      { "id": "p-osaka", "name": "大阪", "x": 38, "y": 62 },
-      { "id": "p-nara", "name": "奈良", "x": 42, "y": 64 },
-      { "id": "p-kyoto", "name": "京都", "x": 40, "y": 56 },
-      { "id": "p-nikko", "name": "日光", "x": 74, "y": 30 },
-      { "id": "p-kawaguchiko", "name": "河口湖", "x": 64, "y": 48 },
-      { "id": "p-hakone", "name": "箱根", "x": 66, "y": 52 },
-      { "id": "p-kamakura", "name": "镰仓", "x": 70, "y": 50 }
-    ],
-    "routes": [
-      { "id": "r-nrt-kix", "from": "p-narita", "to": "p-kix", "type": "flight" },
-      { "id": "r-kix-osaka", "from": "p-kix", "to": "p-osaka", "type": "train" },
-      { "id": "r-osaka-nara", "from": "p-osaka", "to": "p-nara", "type": "train" },
-      { "id": "r-osaka-kyoto", "from": "p-osaka", "to": "p-kyoto", "type": "train" },
-      { "id": "r-shinkansen", "from": "p-osaka", "to": "p-tokyo", "type": "train" },
-      { "id": "r-tokyo-nikko", "from": "p-tokyo", "to": "p-nikko", "type": "drive" },
-      { "id": "r-tokyo-fuji", "from": "p-tokyo", "to": "p-kawaguchiko", "type": "drive" },
-      { "id": "r-fuji-hakone", "from": "p-kawaguchiko", "to": "p-hakone", "type": "drive" },
-      { "id": "r-hakone-kamakura", "from": "p-hakone", "to": "p-kamakura", "type": "drive" },
-      { "id": "r-kamakura-nrt", "from": "p-kamakura", "to": "p-narita", "type": "train" }
-    ],
-    "dailyRoutes": [
-      { "day": 1, "routeIds": [] },
-      { "day": 2, "routeIds": ["r-nrt-kix", "r-kix-osaka", "r-osaka-nara"] },
-      { "day": 3, "routeIds": ["r-osaka-kyoto"] },
-      { "day": 4, "routeIds": ["r-shinkansen"] },
-      { "day": 5, "routeIds": [] },
-      { "day": 6, "routeIds": ["r-tokyo-nikko"] },
-      { "day": 7, "routeIds": ["r-tokyo-fuji"] },
-      { "day": 8, "routeIds": ["r-fuji-hakone"] },
-      { "day": 9, "routeIds": ["r-hakone-kamakura"] },
-      { "day": 10, "routeIds": ["r-kamakura-nrt"] }
-    ]
-  },
-  "rentalCar": null
+  ]
 }
