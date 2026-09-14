@@ -8,7 +8,7 @@
       "overview": true,
       "itinerary": true,
       "driving": true,
-      "todo": true,
+      "todo": false,
       "ledger": true,
       "tickets": true
     },
@@ -34,6 +34,8 @@
   },
   "flightJourneys": [
     { "id": "journey-outbound" },
+    { "id": "journey-domestic" },
+    { "id": "journey-shinkansen" },
     { "id": "journey-return" }
   ],
   "flights": [
@@ -54,6 +56,24 @@
       "flightNumber": "XJ606",
       "departure": { "airportCode": "DMK", "city": "曼谷-廊曼", "date": "2026-10-06", "time": "11:15", "utcOffset": "+07:00" },
       "arrival": { "airportCode": "NRT", "city": "东京-成田", "date": "2026-10-06", "time": "19:45", "utcOffset": "+09:00" }
+    },
+    {
+      "id": "f-mm304",
+      "journeyId": "journey-domestic",
+      "sequence": 1,
+      "airline": { "name": "Peach Aviation" },
+      "flightNumber": "MM304",
+      "departure": { "airportCode": "NRT", "city": "东京-成田", "date": "2026-10-07", "time": "08:30", "utcOffset": "+09:00" },
+      "arrival": { "airportCode": "KIX", "city": "大阪-关西", "date": "2026-10-07", "time": "10:05", "utcOffset": "+09:00" }
+    },
+    {
+      "id": "f-shinkansen",
+      "journeyId": "journey-shinkansen",
+      "sequence": 1,
+      "airline": { "name": "JR东海道新干线" },
+      "flightNumber": "Hikari 656",
+      "departure": { "airportCode": "Shin-Osaka", "city": "新大阪", "date": "2026-10-09", "time": "15:18", "utcOffset": "+09:00" },
+      "arrival": { "airportCode": "Tokyo", "city": "东京站", "date": "2026-10-09", "time": "18:12", "utcOffset": "+09:00" }
     },
     {
       "id": "f-tr885",
@@ -94,25 +114,7 @@
       "checkOut": "2026-10-11"
     }
   ],
-  "rentalCar": {
-    "company": "Nippon Rent-A-Car",
-    "rentalPeriodDays": 3,
-    "vehicle": { "example": "Standard Sedan", "class": "S" },
-    "unlimitedKilometers": true,
-    "price": { "currency": "JPY", "total": 26560 },
-    "insurance": [],
-    "pickup": {
-      "date": "2026-10-12",
-      "location": "新宿",
-      "utcOffset": "+09:00"
-    },
-    "dropoff": {
-      "date": "2026-10-14",
-      "timeZoneLabel": "JST",
-      "vehicleReturnPoint": "神田",
-      "utcOffset": "+09:00"
-    }
-  },
+  "rentalCar": null,
   "places": [
     { "id": "p-nrt", "name": "成田国际机场", "countryCode": "JP" },
     { "id": "p-arthotel", "name": "Art Hotel Narita", "countryCode": "JP" },
@@ -141,7 +143,7 @@
     { "id": "p-kegon-falls", "name": "华严瀑布", "countryCode": "JP" },
     { "id": "p-chuzenji", "name": "中禅寺湖", "countryCode": "JP" },
     { "id": "p-kawaguchiko", "name": "河口湖", "countryCode": "JP" },
-    { "id": "p-arakurayama", "name": "新仓山浅感公园", "countryCode": "JP" },
+    { "id": "p-arakurayama", "name": "新仓山浅间公园", "countryCode": "JP" },
     { "id": "p-oishi-park", "name": "大石公园", "countryCode": "JP" },
     { "id": "p-hakone-owakudani", "name": "大涌谷", "countryCode": "JP" },
     { "id": "p-hakone-ashinoko", "name": "芦之湖", "countryCode": "JP" },
