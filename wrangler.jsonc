@@ -5,4 +5,4 @@
     "directory": ".",
     "exclude": ["node_modules/**", ".git/**", ".github/**"]
   } 
-} 
+}  
