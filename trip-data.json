@@ -7,7 +7,7 @@
       "overview": true,
       "itinerary": true,
       "driving": true,
-      "todo": false,
+      "todo": true,
       "ledger": true,
       "tickets": true
     },
@@ -29,7 +29,7 @@
     "dayCount": 10,
     "primaryDestinationCountries": ["Japan"],
     "primaryDestinationName": "东京大阪",
-    "heroTitle": "东京 × 大阪 10日深度游"
+    "heroTitle": "Sushi Trip 2026"
   },
   "flightJourneys": [
     { "id": "journey-outbound" },
@@ -117,7 +117,6 @@
     "company": "Nippon Rent-A-Car",
     "rentalPeriodDays": 3,
     "vehicle": {
-      "example": "Standard Car",
       "class": "S"
     },
     "unlimitedKilometers": true,
@@ -131,16 +130,11 @@
       "date": "2026-10-12",
       "time": "07:00",
       "location": "新宿",
-      "address": "新宿营业所",
       "utcOffset": "+09:00"
     },
     "dropoff": {
       "date": "2026-10-14",
       "time": "16:00",
-      "timeZoneLabel": "JST",
-      "vehicleReturnPoint": "神田",
-      "deadlineWarning": "请准时于 16:00 前还车",
-      "recommendedArrivalTime": "15:30",
       "utcOffset": "+09:00"
     }
   },
